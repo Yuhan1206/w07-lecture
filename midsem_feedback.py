@@ -7,7 +7,7 @@ from wordcloud import WordCloud
 import string
 
 # Open the data file and read the lines
-with open('midsem_feedback.csv', 'r') as f:
+with open('scrambled_midsem_feedback.csv', 'r') as f:
     responses = f.readlines()
 
 question = 0
