@@ -40,11 +40,11 @@ all_answers = ' '.join(all_answers).lower()
 
 # using a comprehension
 answer_words = ''.join([char for char in all_answers if char in string.ascii_lowercase + ' '])
-
+answer_words = answer_words.split()
 
 # Remove words that aren't useful
 to_ignore = ['lecture', 'lectures', 'video', 'videos']
-
+answer_words = ' '.join([word for word in answer_words if word  not in to_ignore])
 
 # print(answer_words)
 
